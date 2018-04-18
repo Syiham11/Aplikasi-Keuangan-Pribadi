@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_detail"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#E5E5E5"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.root.keuangan.Detail">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/spend_container"
+        android:background="@drawable/shape"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp"
+        android:paddingTop="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/title_detail"
+            android:textStyle="normal|bold"
+            android:textSize="20sp"
+            android:fontFamily="casual"
+            android:textColor="#333"
+            android:layout_marginBottom="10dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:ems="10"
+            android:id="@+id/detail_money"
+            android:hint="Nominal"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#3F60CA"
+            android:paddingBottom="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/detail_desc"
+            android:hint="Keterangan"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#3F60CA"
+            android:paddingBottom="15dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/detail_date"
+            android:hint="Tanggal"
+            android:layout_marginBottom="20dp"
+            android:backgroundTint="#3F60CA"
+            android:paddingBottom="15dp" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:text="Edit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnAddSpend"
+                android:layout_weight="1"
+                android:background="#55BA44"
+                android:textColor="#FFF"
+                android:textSize="14sp"
+                android:onClick="editItem" />
+
+            <Button
+                android:text="Hapus"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHistorySpend"
+                android:layout_weight="1"
+                android:background="#DE4433"
+                android:textColor="#FFF"
+                android:layout_marginLeft="10dp"
+                android:onClick="deleteItem" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

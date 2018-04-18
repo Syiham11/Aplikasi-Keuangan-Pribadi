@@ -1,0 +1,269 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="#E5E5E5"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.root.keuangan.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/vertical_container">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true"
+                android:background="@drawable/shape"
+                android:id="@+id/main_menu">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_menu1">
+
+                    <ImageView
+                        app:srcCompat="@drawable/building"
+                        android:id="@+id/img1"
+                        android:layout_width="170dp"
+                        android:onClick="kantor"
+                        android:layout_marginTop="10dp"
+                        android:layout_height="70dp" />
+
+                    <TextView
+                        android:text="Kantor"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu1"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#3377CD"
+                        android:textSize="16sp"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:onClick="kantor" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/basket"
+                        android:id="@+id/img3"
+                        android:layout_marginTop="10dp"
+                        android:onClick="hobi" />
+
+                    <TextView
+                        android:text="Hobi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu3"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="16sp"
+                        android:textColor="#3377CD"
+                        android:fontFamily="casual"
+                        android:onClick="hobi" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/sofa"
+                        android:id="@+id/img5"
+                        android:layout_marginTop="10dp"
+                        android:onClick="rumahTangga" />
+
+                    <TextView
+                        android:text="Rumah Tangga"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu5"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textStyle="normal|bold"
+                        android:textSize="15sp"
+                        android:textColor="#3377CD"
+                        android:fontFamily="casual"
+                        android:onClick="rumahTangga" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/main_menu2">
+
+                    <ImageView
+                        android:layout_width="170dp"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/food"
+                        android:id="@+id/img2"
+                        android:onClick="makan" />
+
+                    <TextView
+                        android:text="Makan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu2"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#3377CD"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="casual"
+                        android:onClick="makan" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/car"
+                        android:id="@+id/img4"
+                        android:layout_marginTop="10dp"
+                        android:onClick="kendaraan" />
+
+                    <TextView
+                        android:text="Kendaraan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu4"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textColor="#3377CD"
+                        android:textStyle="normal|bold"
+                        android:textSize="16sp"
+                        android:fontFamily="casual"
+                        android:onClick="kendaraan" />
+
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="80dp"
+                        app:srcCompat="@drawable/doctor"
+                        android:id="@+id/img6"
+                        android:layout_marginTop="10dp"
+                        android:onClick="lain" />
+
+                    <TextView
+                        android:text="Lain-lain"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/tv_menu6"
+                        android:textAlignment="center"
+                        android:padding="5dp"
+                        android:textStyle="normal|bold"
+                        android:textColor="#3377CD"
+                        android:textSize="16sp"
+                        android:fontFamily="casual"
+                        android:onClick="lain" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/report_menu"
+                android:background="@drawable/shape"
+                android:layout_marginTop="10dp"
+                android:padding="10dp">
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:id="@+id/key_report"
+                    android:layout_marginRight="20dp">
+
+                    <TextView
+                        android:text="Pengeluaran Minggu ini :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_this_week"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:text="Pengeluaran Bulan ini    :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_this_month"
+                        android:padding="5dp"
+                        android:textSize="16sp"
+                        android:textColor="#000" />
+
+                    <TextView
+                        android:text="KAS :"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_cash"
+                        android:padding="5dp"
+                        android:textSize="18sp"
+                        android:textColor="#000"
+                        android:textStyle="normal|bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/rp_main">
+
+                    <TextView
+                        android:text="Rp 437.500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_val_week"
+                        android:textSize="17sp"
+                        android:padding="5dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#DE3344"
+                        android:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:text="Rp 437.500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/main_val_month"
+                        android:textSize="17sp"
+                        android:padding="5dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#DE3344"
+                        android:fontFamily="sans-serif-condensed" />
+
+                    <TextView
+                        android:text="Rp 437.500"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/total_cash"
+                        android:textSize="18sp"
+                        android:padding="5dp"
+                        android:textAlignment="textEnd"
+                        android:textColor="#66BB33"
+                        android:textStyle="normal|bold"
+                        android:fontFamily="sans-serif-condensed" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
